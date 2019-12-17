@@ -21,17 +21,43 @@ public class Conversor {
         
         //Apresentação
         System.out.println("\n\t\t\t -- Conversor --\n");
-        
-        //Entrada        
-        System.out.print("Informe a temperatura em ºC: ");
-        cel = entrada.nextDouble();
 
-        //Processamento
-        fah = 9 * cel / 5 + 32;
+        //Menu        
+        System.out.println("[1] ºC --> ºF");
+        System.out.println("[2] ºF --> ºC");
+        System.out.println("[3] Sair");
         
-        //Saída
-        System.out.printf("\n\t%.2fºC = %.2fºF\n", cel, fah);
+        //Opção do usuário
+        System.out.print("\nOpção: ");
+        int op = entrada.nextInt();
+
+        switch(op){
+            case 1:
+                System.out.println("\n\t\t\t ºC --> ºF\n");
+
+                //Entrada        
+                System.out.print("Informe a temperatura em ºC: ");
+                cel = entrada.nextDouble();
+
+                //Processamento
+                fah = 9 * cel / 5 + 32;
+        
+                //Saída
+                System.out.printf("\n\t%.2fºC = %.2fºF\n", cel, fah);
                 
+                break;
+            case 2:
+                System.out.println("\n\t\t\t ºC --> ºF\n");
+                
+                break;
+            case 3:
+                System.out.println("Abraço!");
+                
+                break;
+            default:
+                System.out.println("Opção incorreta!");
+                
+        }
     }
     
 }
