@@ -21,8 +21,8 @@ public class Conversor {
                             
         //Apresentação
         System.out.println("\n\t\t\t -- Conversor --\n");
-        
-        //Menu
+
+        //Menu        
         System.out.println("[1] ºC --> ºF");
         System.out.println("[2] ºF --> ºC");
         System.out.println("[3] Sair");
@@ -66,7 +66,7 @@ public class Conversor {
                 System.out.println("Opção incorreta!");
                 
         }
-                
+
     }
     
 }
